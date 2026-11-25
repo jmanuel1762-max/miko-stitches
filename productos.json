@@ -1,0 +1,304 @@
+[
+    {
+        "id": 1,
+        "nombre": "Frieren",
+        "precio": "12.00",
+        "categoria": "Personajes",
+        "imagen": "imagen/frieren.jpeg",
+        "descripcion": "¡La maga elfa más querida llegó en su versión más tierna y apapachable! 🧝‍♀️✨ Les presento a esta Frieren amigurumi hecha 100% a mano con mucho cariño."
+    },
+    {
+        "id": 2,
+        "nombre": "Suga",
+        "precio": "12.00",
+        "categoria": "Personajes",
+        "imagen": "imagen/suga.jpeg",
+        "imagenes": ["imagen/suga-2.png", "imagen/suga-3.png"],
+        "descripcion": "¡Llegó la ternura hecha tejido! 🐱✨ Les presento a este adorable amigurumi de Suga (Yoongi) tejido 100% a mano con mucho amor."
+    },
+    {
+        "id": 3,
+        "nombre": "Kuromi",
+        "precio": "15.00",
+        "categoria": "Personajes",
+        "imagen": "imagen/kuromi.jpeg",
+        "descripcion": "¡El toque rebelde y tierno que tu colección necesita! 🖤 Les presento a esta hermosísima Kuromi amigurumi tejida 100% a mano con pura dedicación."
+    },
+    {
+        "id": 4,
+        "nombre": "Yoshi",
+        "precio": "10.00",
+        "categoria": "Personajes",
+        "imagen": "imagen/yoshi.jpeg",
+        "descripcion": "¡El compañero de aventuras perfecto del Reino Champiñón! 🦖💚 Les presento a este adorable Yoshi amigurumi tejido 100% a mano con mucha precisión."
+    },
+    {
+        "id": 5,
+        "nombre": "Hollow Knight",
+        "precio": "15.00",
+        "categoria": "Personajes",
+        "imagen": "imagen/hollow knight.png",
+        "imagenes": ["imagen/hollow Knight-2.jpg"],
+        "descripcion": "¡El pequeño vasito sin voz ha llegado desde Hallownest! ⚔️🖤 Les presento a este increíble amigurumi de Hollow Knight tejido 100% a mano con una textura impecable."
+    },
+    {
+        "id": 6,
+        "nombre": "Groot",
+        "precio": "10.00",
+        "categoria": "Personajes",
+        "imagen": "imagen/Groot.png",
+        "descripcion": "¡Yo Soy Groot! 🌱🌹 Les presento a este adorable Groot amigurumi tejido 100% a mano con muchísima dedicación y cariño."
+    },
+    {
+        "id": 7,
+        "nombre": "Conejito",
+        "precio": "25.00",
+        "categoria": "Peluches",
+        "imagen": "imagen/conejo.png",
+        "imagenes": ["Imagen/conejo-1.jpg","Imagen/conejo-2.jpg"],
+        "descripcion": "¡Siente la suavidad de una nubecita! 🐰☁️ Les presento a este adorable conejito de peluche tejido 100% a mano con hilo tipo chenille."
+    },
+    {
+        "id": 8,
+        "nombre": "Peluche de dragon",
+        "precio": "25.00",
+        "categoria": "Peluches",
+        "imagen": "imagen/dragon.png",
+        "imagenes": ["Imagen/dragon-1.jpg"],
+        "descripcion": "¡Un pequeñito lleno de magia y suavidad! 🦕💙 Les presento a este tierno peluche de dragón tejido 100% a mano con hilo afelpado tipo chenille"
+    },
+    {
+        "id": 9,
+        "nombre": "Margarita",
+        "precio": "5.00",
+        "categoria": "Llaveros",
+        "imagen": "imagen/margarita.png",
+        "descripcion": "¡Lleva la frescura de la primavera a donde vayas! 🌼🍃 Les presento este hermoso llavero de margarita tejido 100% a mano con una textura suave y esponjosa."
+    },
+    {
+        "id": 10,
+        "nombre": "Harry Potter",
+        "precio": "10.00",
+        "categoria": "Llaveros",
+        "imagen": "imagen/harry-potter.png",
+        "descripcion": "¡La magia de Hogwarts cabe en la palma de tu mano! ⚡️gryffindor❤️💛 Les presento a este increíble llavero de Harry Potter tejido 100% a mano con finos detalles artesanales."
+    },
+    {
+        "id": 11,
+        "nombre": "Ranitas",
+        "precio": "5.00",
+        "categoria": "Llaveros",
+        "imagen": "imagen/ranitas.png",
+        "descripcion": "¡La parejita más tierna para compartir! 🐸💚 Les presento a estos adorables llaveros de ranitas tejidos 100% a mano a crochet con un diseño súper divertido y flexible."
+    },
+    {
+        "id": 12,
+        "nombre": "Tortuga",
+        "precio": "10.00",
+        "categoria": "Llaveros",
+        "imagen": "imagen/tortuga.png",
+        "descripcion": "¡Una dosis de ternura marina para llevar a todas partes! 🐢💚 Les presento este bello llavero de tortuguita tejido 100% a mano a crochet."
+    },
+    {
+        "id": 13,
+        "nombre": "Ditto",
+        "precio": "6.00",
+        "categoria": "Llaveros",
+        "imagen": "imagen/ditto-1.jpg",
+        "imagenes": ["Imagen/ditto.jpg"],
+        "descripcion": "¡El Pokémon más versátil y tierno en versión miniatura! 💜✨ Les presento este llavero de Ditto tejido 100% a mano a crochet."
+    },
+    {
+        "id": 14,
+        "nombre": "Girasol en Maceta 🌻",
+        "precio": "8.00",
+        "categoria": "Personalizados",
+        "imagen": "imagen/girasol.jpg",
+        "descripcion": "Llena tus espacios de buena energía con nuestro girasol en maceta tejida. Un detalle atemporal, confeccionado con dedicación punto por punto. Ideal para regalar o regalarte. 🌻💛"
+    },
+    {
+        "id": 15,
+        "nombre": "Cojin de flor",
+        "precio": "30.00",
+        "categoria": "Personalizados",
+        "imagen": "imagen/cojin.jpg",
+        "imagenes": ["imagen/cojin-2.png","Imagen/cojin-1.jpg"],
+        "descripcion": "¡La combinación perfecta entre suavidad, color y ternura! 🌺 Este precioso cojín afelpado en forma de flor dará ese toque cálido y alegre a cualquier espacio."
+    },
+    {
+        "id": 16,
+        "nombre": "Llaveros de Ositos",
+        "precio": "15.00",
+        "categoria": "Llaveros",
+        "imagen": "imagen/ositos.jpg",
+        "descripcion": "Un par de ositos artesanales tejidos a mano que se unen para formar un corazón. Llévalos juntos o regálale la mitad a tu persona favorita. 🧸💖"
+    },
+    {
+        "id": 17,
+        "nombre": "Mini Ramo de Rosa",
+        "precio": "10.00",
+        "categoria": "Personalizados",
+        "imagen": "imagen/ramo de rosa.jpg",
+        "descripcion": "El romanticismo de una rosa que nunca se marchita, capturado en un delicado diseño hecho a mano. Este hermoso mini ramo de rosa roja a crochet es el detalle perfecto para expresar amor, gratitud o para decorar con un toque cálido y eterno cualquier rincón. 🌹❤️"
+    },
+    {
+        "id": 18,
+        "nombre": "Kirby ⭐️✨",
+        "precio": "5.00",
+        "categoria": "Personalizados",
+        "imagen": "Imagen/kirby.jpg",
+        "imagenes": ["Imagen/kirby-2.jpg","Imagen/kirby-3.jpg"],
+        "descripcion": "¡La ternura de Kirby lista para viajar contigo! Amigurumi de Kirby tejido a mano en su clásica estrella amarilla. Elaborado con hilo suave y un acabado afelpado perfecto para decorar tu escritorio, repisa o regalar a un fan de los videojuegos. ⭐️💖"
+    },
+    {
+        "id": 19,
+        "nombre": "Llavero de My Melody",
+        "precio": "20.00",
+        "categoria": "Llaveros",
+        "imagen": "imagen/melody.jpg",
+        "descripcion": "¡Lleva la ternura de tu personaje favorito a todas partes! Este hermoso llavero de My Melody, tejido totalmente a mano a crochet, es el accesorio perfecto para darle un toque dulce y único a tus llaves, mochila o bolso. 👜💖"
+    },
+    {
+        "id": 20,
+        "nombre": "Demogorgon (Stranger Things)",
+        "precio": "25.00",
+        "categoria": "Personajes",
+        "imagen": "imagen/demogorgon-1.jpg",
+        "descripcion": "¡Lleva la emoción del Upside Down a tu estantería! Este adorable pero temible Demogorgon de Stranger Things está tejido completamente a mano[cite: 1.1.21]. La pieza definitiva para cualquier coleccionista, fan de la serie o amante de los amigurumis con un toque original. ¡No te quedes sin el tuyo! 🧟‍♂️🖤"
+    },
+    {
+        "id": 21,
+        "nombre": "Nacimiento Navideño",
+        "precio": "40.00",
+        "categoria": "Personalizados",
+        "imagen": "imagen/nacimiento.jpg",
+        "imagenes": ["Imagen/nacimiento-1.jpg"],
+        "descripcion": "Llena tu hogar del verdadero espíritu navideño con esta obra de arte completamente artesanal. Este tierno Nacimiento reúne la Sagrada Familia tejida a crochet dentro de una esfera rústica de hilo de yute, iluminada con luces cálidas que crean una atmósfera mágica y acogedora."
+    },
+    {
+        "id": 22,
+        "nombre": "Cactus en Flor en Maceta",
+        "precio": "10.00",
+        "categoria": "Personalizados",
+        "imagen": "imagen/cactus.jpg",
+        "descripcion": "Añade una dosis de verdor, alegría y estilo a tu escritorio o rincón favorito sin preocuparte por el riego ni las espinas. Este adorable cactus amigurumi tejido a mano viene coronado con una vistosa flor rosada, listo para llenar de vida cualquier espacio. 🌵💖"
+    },
+    {
+        "id": 23,
+        "nombre": "Pikachu a Crochet ⚡💛",
+        "precio": "20.00",
+        "categoria": "Personalizados",
+        "imagen": "imagen/pikachu.jpg",
+        "descripcion": "¡Atrapa el tierno estilo de tu Pokémon favorito! Este hermoso amigurumi de Pikachu está tejido 100% a mano con una dedicación excepcional, convirtiéndose en el compañero perfecto para decorar escritorios, repisas o cualquier espacio geek y acogedor. ⚡💛"
+    },
+    {
+        "id": 24,
+        "nombre": "Snoopy a Crochet 🐶",
+        "precio": "20.00",
+        "categoria": "Personalizados",
+        "imagen": "imagen/snuppy.jpg",
+        "imagenes": ["imagen/snupy-1.png", "imagen/snupy-2.jpg"],
+        "descripcion": "Un adorable Snoopy hecho a mano con hilo aterciopelado que da ganas de abrazarlo todo el tiempo. Su diseño compacto y tierno lo convierte en el obsequio ideal.🐾✨"
+    },
+    {
+        "id": 25,
+        "nombre": "Llavero Estrella a Crochet ✨🌟",
+        "precio": "6.00",
+        "categoria": "Llaveros",
+        "imagen": "imagen/Star.png",
+        "descripcion": "Un adorable Snoopy hecho a mano con hilo aterciopelado que da ganas de abrazarlo todo el tiempo. Su diseño compacto y tierno lo convierte en el obsequio ideal.🐾✨"
+    },
+    {
+        "id": 26,
+        "nombre": "Birrete",
+        "precio": "4.00",
+        "categoria": "Personalizados",
+        "imagen": "Imagen/birrete-1.jpg",
+        "imagenes": ["Imagen/birrete-2.jpg"],
+        "descripcion": "¡El regalo perfecto para celebrar ese gran logro! Llavero de birrete tejido a mano en crochet con su borla amarilla detallada. Ideal para acompañar tus llaves, bolso o regalar a ese nuevo graduando. 🎓✨"
+    },
+    {
+        "id": 27,
+        "nombre": "Colgante de la Virgen del Carmen",
+        "precio": "10.00",
+        "categoria": "Personalizados",
+        "imagen": "Imagen/colgante-1.jpg",
+        "imagenes": ["Imagen/colgante-2.jpg"],
+        "descripcion": "Un detalle lleno de fe y ternura tejido a mano en crochet, con manto marrón, borde dorado y escapulario colgante. Ideal para llevar en el auto, colgar en casa o regalar con mucho cariño. 🙏✨"
+    },
+    {
+        "id": 28,
+        "nombre": "Sombrero a crochet 👒",
+        "precio": "30.00",
+        "categoria": "Personalizados",
+        "imagen": "Imagen/sombrero.jpg",
+        "descripcion": "Sombrero tejido a mano en crochet en tono rosado, con diseño clásico y ala ancha que aporta estilo y frescura en los días soleados. Ideal para paseos, playa o complementar tus outfits con un toque artesanal. 👒✨"
+    },
+    {
+        "id": 29,
+        "nombre": "kit  de baby shower (elefantes más cestas)",
+        "precio": "30.00",
+        "categoria": "Personalizados",
+        "imagen": "Imagen/llaveros-y-cestas.jpg",
+        "descripcion": "Hermoso set tejido a mano en crochet ideal para baby shower, con tiernos llaveros de elefantitos en tonos pastel y prácticas cestitas decorativas. Un recuerdo especial y hecho con cariño para sorprender a tus invitados o decorar la habitación del bebé. 🐘🎀✨"
+    },
+    {
+        "id": 30,
+        "nombre": "Llaveros de pikachu",
+        "precio": "8.00",
+        "categoria": "Llaveros",
+        "imagen": "Imagen/llavero-pikachu.jpg",
+        "descripcion": "¡Llévate toda la energía de Pikachu a donde vayas! Llavero amigurumi tejido 100% a mano con hilo de algodón suave, mejillas rojas bordadas y detalles precisos de las orejitas. Incluye herraje resistente y cascabel para acompañar tus llaves o bolso. ⚡️🟡✨"
+    },
+    {
+        "id": 31,
+        "nombre": "Llaveros de monito",
+        "precio": "8.00",
+        "categoria": "Llaveros",
+        "imagen": "Imagen/monito.png",
+        "descripcion": "Adorable llavero de monito tejido a crochet con acabado suave y compacto. Ideal para regalar o darle un toque divertido y artesanal a tus accesorios diarios. 🐒🧶"
+    },
+    {
+        "id": 32,
+        "nombre": "Llaveros de graduante",
+        "precio": "8.00",
+        "categoria": "Llaveros",
+        "imagen": "Imagen/graduante.jpg",
+        "descripcion": "¡Celebra un logro inolvidable con un recuerdo hecho a mano! Llavero de graduante tejido 100% a crochet, con birrete negro, borla amarilla, toga detallada y carita tierna con mejillas rosadas. Incluye herraje resistente para llevar en llaves, mochila o bolso como un detalle especial de graduación. 🎓✨💛"
+    },
+    {
+        "id": 33,
+        "nombre": "Sullivan a crochet",
+        "precio": "20.00",
+        "categoria": "Personajes",
+        "imagen": "Imagen/sullivan.jpg",
+        "imagenes": ["Imagen/sullivan-1.jpg","Imagen/sullivan-2.jpg","Imagen/sullivan-3.jpg"],
+        "descripcion": "Un adorable Sullivan tejido a crochet que combina su aspecto juguetón con la calidez de lo artesanal. Ideal para decorar o regalar."
+    },
+    {
+        "id": 34,
+        "nombre": "Kuromi a crochet",
+        "precio": "20.00",
+        "categoria": "Llaveros",
+        "imagen": "Imagen/kuromi.jpg",
+        "imagenes": ["Imagen/kuromi-1.jpg"],
+        "descripcion": "Dale un toque rebelde y adorable a tus accesorios diarios con este llavero de Kuromi hecho 100% a mano. Su estilo tejido combina la dulzura del crochet con detalles llenos de personalidad."
+    },
+    {
+        "id": 35,
+        "nombre": "Spiderman a crochet",
+        "precio": "25.00",
+        "categoria": "Personajes",
+        "imagen": "Imagen/spiderman.png",
+        "descripcion": "Dale un toque rebelde y adorable a tus accesorios diarios con este llavero de Kuromi hecho 100% a mano. Su estilo tejido combina la dulzura del crochet con detalles llenos de personalidad."
+    },
+    {
+        "id": 36,
+        "nombre": "Principito a crochet 👑",
+        "precio": "20.00",
+        "categoria": "Personajes",
+        "imagen": "Imagen/principito.png",
+        "imagenes": ["Imagen/principito-1.jpg"],
+        "descripcion": "Lleva un pedacito de esta entrañable historia a tus espacios con nuestro Principito tejido 100% a mano. Cada puntada refleja dedicación y ternura para crear una pieza especial y llena de significado. 🌹✨👑"
+    }
+]

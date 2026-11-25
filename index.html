@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miko Stitches | Amigurumis hechos a mano en Cumaná</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="icon" type="image/jpeg" href="./imagen/miko.jpg">
+
+</head>
+<body>
+
+    <!-- CINTILLO / HEADER SUPERIOR CON LOGO, MENÚ Y CARRITO -->
+    <header class="header-cintillo">
+    <!-- Logo y Texto -->
+    <div class="logo-container">
+        <img src="../imagen/miko.jpg" alt="Logo Mikostitches">
+        <div class="logo-texto">
+            <h2>Miko Stitches</h2>
+            <span>Amigurumis - Tejidos</span>
+        </div>
+    </div>
+
+    <!-- Menú de navegación envuelto para poder ocultarlo/desplegarlo en móvil -->
+    <nav class="nav-links-container" id="navLinksContainer">
+        <ul class="nav-menu">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#catalogo">Catálogo</a></li><!-- 👈 Vinculado al id="catalogo" -->
+            <li><a href="#post">Post</a></li>
+            <!--<li><a href="#">Nosotros</a></li>
+            <li><a href="#">Personalizado</a></li>-->
+            <li><a href="#opiniones">Opiniones</a></li>
+            <li><a href="#faq">FAQ</a></li> <!-- 👈 O "Ayuda / Dudas" con un icono -->
+            <li><a href="#contacto">Contacto</a></li>
+            <!-- <li><a href="#">Patrones</a></li> -->
+        </ul>
+    </nav>
+
+    <!-- Botones de acción derecha (Un solo Carrito + Menú Hamburguesa) -->
+    <div class="header-actions">
+        <button class="carrito-icono-btn" onclick="toggleCarritoDrawer()" title="Ver carrito">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="333" class="bi bi-cart4" viewBox="0 0 16 16">
+                <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l.5 2H5V5zM6 5v2h2V5zm3 0v2h2V5zm3 0v2h1.36l.5-2zm1.11 3H12v2h.61zM11 8H9v2h2zM8 8H6v2h2zM5 8H3.89l.5 2H5zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"/>
+            </svg>
+            <span id="contadorCarrito" class="carrito-badge">0</span>
+        </button>
+
+        <!-- Botón de Hamburguesa para Móvil -->
+        <button class="menu-hamburguesa-btn" onclick="toggleMenuMovil()" title="Menú">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+            </svg>
+        </button>
+    </div>
+</header>
+
+<!-- Carrusel Amigable con tus Flyers de Anuncios -->
+<div class="carrusel-banner-container">
+    <div class="carrusel-track" id="carruselTrack">
+
+        <!-- Diapositiva 1: Anuncio 1 -->
+        <div class="carrusel-slide active imagen-banner">
+            <!-- NUEVO: en celular se usa la versión recortada del cartel (letras más grandes) -->
+            <picture>
+                <source media="(max-width: 768px)" srcset="../imagen/banner-11-movil.jpg">
+                <img src="../imagen/banner-11-pc.jpg" alt="¡Bienvenidos a Miko Stitches! Amigurumis hechos bajo pedido" class="carrusel-imagen-flyer">
+            </picture>
+        </div>
+
+        <!-- Diapositiva 3: Texto de aviso de la semana de anticipación 
+        <div class="carrusel-slide slide-texto-aviso">
+        <div class="carrusel-texto">
+        <img src="../imagen/suga.jpeg" alt="Amigurumi Izquierda" class="img-lateral-bienvenida">
+        
+        <div class="bloque-info-texto">
+            <h2>🧶  ¡Bienvenidos a Miko Stitches! ✨</h2>
+            <p>Todos nuestros amigurumis se elaboran bajo pedido con <strong>1 semana de anticipación</strong>. ¡Separa el tuyo!</p>
+        </div>
+        
+        <img src="../imagen/conejo.png" alt="Amigurumi Derecha" class="img-lateral-bienvenida">
+    </div>
+        </div>-->
+        
+        <!-- Diapositiva 1: Anuncio 1 -->
+        <div class="carrusel-slide">
+            <img src="../imagen/banner-navidad-2.jpg" alt="Amigurumis Personalizados Miko Stitches" class="carrusel-imagen-flyer">
+        </div>
+
+        <!-- Diapositiva 2: Anuncio 2 -->
+        <div class="carrusel-slide">
+            <img src="../imagen/creaciones-a-crochet-1.jpg" alt="Llaveritos y Amigurumis Miko Stitches" class="carrusel-imagen-flyer">
+        </div>
+
+        
+
+    </div>
+
+    <!-- Botones de navegación lateral -->
+    <button class="carrusel-btn prev" onclick="cambiarSlide(-1)">&#10094;</button>
+    <button class="carrusel-btn next" onclick="cambiarSlide(1)">&#10095;</button>
+
+    <!-- Indicadores de puntos abajo -->
+    <div class="carrusel-puntos" id="carruselPuntos">
+        <span class="punto active" onclick="irASlide(0)"></span>
+        <span class="punto" onclick="irASlide(1)"></span>
+        <span class="punto" onclick="irASlide(2)"></span>
+    </div>
+</div>
+
+    <div class="main-container">
+        <!-- NUEVO ENCABEZADO DE LA TIENDA -->
+        <div id="catalogo" class="tienda-header-section">
+            <!--<div class="subtitulo-tienda">Nuestra Tienda</div>-->
+            <h1 class="titulo-tienda catalogo-titulo">Catálogo de Amigurumis</h1>
+            <p class="descripcion-tienda">Encuentra el compañero afelpado perfecto o el regalo idóneo para esa persona especial.</p>
+        </div>
+        
+        <div>
+            <!-- SECCIÓN DEL CATÁLOGO (ANCHO COMPLETO) -->
+            <input type="text" id="buscador" placeholder="Busca un producto por nombre...">
+            
+            <!-- Botones de filtro -->
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="Personajes">Personajes</button>
+                <button class="filter-btn" data-filter="Peluches">Peluches</button>
+                <button class="filter-btn" data-filter="Llaveros">Llaveros</button>
+                <button class="filter-btn" data-filter="Personalizados">Personalizados</button>
+            </div>
+
+            <div id="listaProductos" class="info-producto">
+                <p style="color: #666;">Cargando productos...</p>
+            </div>
+
+            <!-- CONTENEDOR DE PAGINACIÓN -->
+            <nav id="paginacionCatalogo" class="paginacion-catalogo" aria-label="Paginación de productos" hidden></nav>
+        </div>
+    </div>
+
+    <!-- MODAL / CARRITO DESPLEGABLE LATERAL (DRAWER) -->
+    <div id="carritoModal" class="carrito-modal-overlay" onclick="cerrarConFondo(event)">
+        <div class="carrito-drawer">
+            <div>
+                <div class="carrito-drawer-header">
+                    <h2><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
+  <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l.5 2H5V5zM6 5v2h2V5zm3 0v2h2V5zm3 0v2h1.36l.5-2zm1.11 3H12v2h.61zM11 8H9v2h2zM8 8H6v2h2zM5 8H3.89l.5 2H5zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"/>
+</svg> Tu Carrito</h2>
+                    <button class="btn-cerrar-drawer" onclick="toggleCarritoDrawer()" title="minizar carrito">✕</button>
+                </div>
+
+                <!-- AGREGA ESTE AVISO VISUAL AQUÍ -->
+    <div class="aviso-pedido-banner">
+        <p>✨ <strong>Aviso:</strong> Todos nuestros productos se realizan bajo pedido con <strong>1 semana de anticipación</strong>.</p>
+    </div>
+                
+                <!-- Encabezado: "Tus artículos" y Botón "Vaciar cesta" -->
+                <div class="carrito-header" style="margin-top: 15px;">
+                    <h3>Tus artículos</h3>
+                    <button class="btn-vaciar" onclick="vaciarCarrito()">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
+                  <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5M11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47M8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5"/>
+                </svg> Vaciar cesta
+                    </button>
+                </div>
+
+                <div id="elementosCarrito" class="carrito-items-container">
+                    <p style="color: #886; font-size: 14px;" align="center">Tu carrito está vacío.</p>
+                </div>
+            </div>
+
+            <div>
+                <hr>
+                <h3>Total: $<span id="totalPrecio">0</span></h3>
+
+                <!-- NUEVO: Botón para enviar pedido por WhatsApp -->
+                <button class="btn-whatsapp" onclick="enviarPorWhatsApp()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                  <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+                </svg> Enviar pedido por WhatsApp
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECCIÓN DE POSTS / NOVEDADES -->
+<section id="posts-section" class="posts-container-general">
+    <div id="post" class="posts-header">
+        <h2>✨ Creaciones y Encargos</h2>
+        <p>Inspiración de proyectos tejidos a mano listos para personalizar.</p>
+    </div>
+
+    <div class="posts-grid">
+        <!-- Post 1 -->
+        <article class="post-card">
+            <div class="post-img-container">
+                <!-- Aquí puedes poner la ruta de tu imagen -->
+                <img src="../imagen/Diseños-mikos-1.jpg" alt="Cuidados del amigurumi" class="post-img">
+            </div>
+            <div class="post-content">
+                <!--<span class="post-date">10 de Noviembre, 2026</span>-->
+                <h3>¡Haz realidad tu diseño soñado! 💡</h3>
+                <p>Desde anime hasta llaveros personalizados para graduación o fechas especiales. Elaborados bajo pedido.</p>
+                <!--<a href="#" class="btn-leer-mas">Leer más ➔</a>-->
+            </div>
+        </article>
+
+        <!-- Post 2 -->
+        <article class="post-card">
+            <div class="post-img-container">
+                <img src="../imagen/Diseños-mikos-2.jpg" alt="Nuevos diseños" class="post-img">
+            </div>
+            <div class="post-content">
+                <!--<span class="post-date">05 de Noviembre, 2026</span>-->
+                <h3>Detalles únicos que enamoran 💖</h3>
+                <p>Colección de llaveros y peluches tejidos. Elige el tamaño, color y personaje que prefieras.</p>
+                <!-- <a href="#" class="btn-leer-mas">Leer más ➔</a>-->
+            </div>
+        </article>
+
+        <article class="post-card">
+            <div class="post-img-container">
+                <img src="../imagen/anuncio 3.jpg" alt="Nuevos diseños" class="post-img">
+            </div>
+            <div class="post-content">
+                <!--<span class="post-date">05 de Noviembre, 2026</span>-->
+                <h3>¡Lleva la magia del tejido contigo!✨</h3>
+                <p>Creamos amigurumis y llaveros personalizados de tus personajes favoritos. Elige el modelo y tamaño, nosotros lo tejemos para ti.</p>
+                <!-- <a href="#" class="btn-leer-mas">Leer más ➔</a>-->
+            </div>
+        </article>
+    </div>
+</section>
+
+<!-- Sección de Testimonios / Opiniones -->
+<section id="opiniones" class="testimonios-section">
+    <div class="testimonios-container">
+        <div class="testimonios-header">
+            <span class="subtitulo-tienda">CLIENTES FELICES</span>
+            <h2 class="titulo-tienda">Lo que dicen de nosotros</h2>
+            <p class="descripcion-tienda">Cada pieza está hecha con amor y dedicación. ¡Déjanos tu opinión sobre tu amigurumi!</p>
+        </div>
+
+        <!-- FORMULARIO PARA DEJAR RESEÑA -->
+        <div class="form-testimonio-card">
+            <h3>¡Déjanos tu opinión! ✨</h3>
+            <form id="form-opinion" novalidate>
+                <div class="form-group-inline">
+                    <input type="text" id="nombre-cliente" placeholder="Tu nombre" required>
+                    <input type="text" id="detalles-pedido" placeholder="Ej: Llavero / Pedido Cumaná" required>
+                </div>
+                
+                <!-- Calificación por estrellas interactiva -->
+                <div class="rating-select">
+                    <span>Tu calificación:</span>
+                    <div class="stars-picker" id="stars-picker">
+                        <span data-value="1">★</span>
+                        <span data-value="2">★</span>
+                        <span data-value="3">★</span>
+                        <span data-value="4">★</span>
+                        <span data-value="5" class="">★</span>
+                    </div>
+                </div>
+
+                <textarea id="comentario-cliente" placeholder="¿Qué tal fue tu experiencia con tu amigurumi o pedido?" rows="3" required></textarea>
+                <p id="form-opinion-error" class="form-error" role="alert" hidden></p>
+                <br><br>
+                <button type="submit" class="btn-enviar-opinion">Enviar opinión por WhatsApp</button>
+                <small style="display:block; margin-top:10px; color:#777;">Tu opinión nos llega por WhatsApp y la publicamos en la página. ✨</small>
+            </form>
+        </div>
+
+        <!-- LISTA DE OPINIONES (Se cargará dinámicamente) -->
+        <div class="testimonios-grid" id="testimonios-grid">
+            <!-- Las opiniones enviadas por los clientes aparecerán aquí -->
+        </div>
+
+        <!-- Botón "Ver más" (aparece solo si hay más opiniones que las visibles) -->
+        <div class="testimonios-ver-mas" id="testimonios-ver-mas" hidden>
+            <button type="button" id="btn-ver-mas-opiniones" class="btn-ver-mas-opiniones">Ver más opiniones</button>
+        </div>
+    </div>
+</section>
+
+<section class="seccion-proceso" id="proceso">
+    <div class="proceso-header">
+        <span class="subtitulo-seccion">PASO A PASO 🧵✨</span>
+        <h2>Nuestro Proceso de Creación</h2>
+        <p>Como el arte del crochet a mano tiene un valor especial, así es como nace cada pieza con un toque muy cálido:</p>
+    </div>
+
+    <div class="proceso-grid">
+        <!-- Paso 1 -->
+        <div class="proceso-card">
+            <div class="proceso-numero">1</div>
+            <div class="proceso-icono">💡</div>
+            <h3>Cotización e inicio del encargo</h3>
+            <p>En este paso nos ponemos en contacto (tejedor y cliente) para definir tu proyecto, generar el presupuesto y apartar el tejido con el 50% de abono inicial.</p>
+        </div>
+
+        <!-- Paso 2 -->
+        <div class="proceso-card">
+            <div class="proceso-numero">2</div>
+            <div class="proceso-icono">🧶</div>
+            <h3>Se inicia el proyecto</h3>
+            <p>Trabajamos cada puntada a mano utilizando hilos de algodón hipoalergénico y un relleno súper suave, cuidando cada detalle de tu pieza</p>
+        </div>
+
+        <!-- Paso 3 -->
+        <div class="proceso-card">
+            <div class="proceso-numero">3</div>
+            <div class="proceso-icono">🎁</div>
+            <h3>Finalización del pedido</h3>
+            <p>Preparamos el packaging y acordamos entrega con el cliente.</p>
+        </div>
+    </div>
+</section>
+
+<!-- SECCIÓN DE PATRONES EN PDF 
+<section id="patrones" class="main-container">
+    <div class="tienda-header-section">
+        <span class="subtitulo-tienda">¡TEJE A TU PROPIO RITMO! 🧶</span>
+        <h2 class="titulo-tienda">Patrones de Amigurumis (PDF)</h2>
+        <p class="descripcion-tienda">Guías detalladas paso a paso con imágenes y lista de materiales para crear tus propios amigurumis.</p>
+    </div>
+
+    <div class="productos-grid">
+        <div class="producto-card">
+            <span class="badge-categoria">PDF Digital</span>
+            <img src="../imagen/frieren.jpeg" alt="Patrón Frieren">
+            <div class="info-producto">
+                <h3>Patrón Frieren (PDF)</h3>
+                <p class="producto-descripcion">Guía completa de 14 páginas con fotografías paso a paso y lista de materiales.</p>
+                <hr class="card-divider">
+                <div class="card-footer-action">
+                    <div class="precio-box">
+                        <span class="precio-label">Precio Digital</span>
+                        <span class="precio-monto">$5.00</span>
+                    </div>
+                    <button class="btn-añadir" onclick="comprarPatronWhatsApp('Patrón Frieren', 5.00)">
+                        📥 Solicitar PDF
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="producto-card">
+            <span class="badge-categoria">PDF Digital</span>
+            <img src="../imagen/yoshi.jpeg" alt="Patrón Llaveros">
+            <div class="info-producto">
+                <h3>Pack Llaveritos (PDF)</h3>
+                <p class="producto-descripcion">Aprende a tejer 3 modelos de llaveros rápidos e ideales para principiantes.</p>
+                <hr class="card-divider">
+                <div class="card-footer-action">
+                    <div class="precio-box">
+                        <span class="precio-label">Precio Digital</span>
+                        <span class="precio-monto">$4.00</span>
+                    </div>
+                    <button class="btn-añadir" onclick="comprarPatronWhatsApp('Pack Llaveritos', 4.00)">
+                        📥 Solicitar PDF
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>-->
+
+<!-- Sección de Preguntas Frecuentes (FAQ) -->
+<section class="faq-section" id="faq">
+    <div class="faq-container">
+        <div class="faq-header">
+            <span class="subtitulo-tienda">RESOLVEMOS TUS DUDAS</span>
+            <h2 class="titulo-tienda">Preguntas Frecuentes</h2>
+            <p class="descripcion-tienda">Todo lo que necesitas saber sobre nuestros amigurumis personalizados.</p>
+        </div>
+
+        <div class="faq-accordion">
+            <!-- Pregunta 1 -->
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>¿Con cuántos días de anticipación debo encargar mi amigurumi?</span>
+                    <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </button>
+                <div class="faq-answer">
+                    <p>Todos nuestros productos se elaboran artesanalmente bajo pedido. Recomendamos realizarlos con un mínimo de <strong>1 semana de anticipación</strong> para garantizar los detalles y la calidad de cada pieza.</p>
+                </div>
+            </div>
+
+            <!-- Pregunta 2 -->
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>¿Puedo pedir un personaje de anime/serie que no esté en el catálogo?</span>
+                    <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </button>
+                <div class="faq-answer">
+                    <p>¡Por supuesto! En la sección <strong>Whatsapp</strong> puedes enviarnos la imagen o referencia del personaje de anime, videojuego o serie que desees y lo hacemos realidad para ti.</p>
+                </div>
+            </div>
+
+            <!-- Pregunta 3 -->
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>¿Cuáles son los métodos de pago aceptados?</span>
+                    <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </button>
+                <div class="faq-answer">
+                    <p>Aceptamos diversos métodos de pago digitales y locales para tu comodidad: <strong>Binance Pay (USDT)</strong>, <strong>Transferencia bancaria</strong> y <strong>Pago Móvil</strong>.</p>
+                </div>
+            </div>
+
+            <!-- Pregunta 4 -->
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>¿Hacen envíos a otras ciudades o solo entregas locales en Cumaná?</span>
+                    <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </button>
+                <div class="faq-answer">
+                    <p>Actualmente realizamos entregas locales coordinadas en <strong>Cumaná</strong>. Para envíos nacionales a otras ciudades, consúltanos directamente por WhatsApp para verificar las agencias de encomienda disponibles <strong>(los gastos corren por cuenta del cliente)</strong>.</p>
+                </div>
+            </div>
+
+            <!-- Pregunta 5 -->
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>¿Qué sucede si ocurre algún inconveniente o cancelación con mi pedido?</span>
+                    <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </button>
+            <div class="faq-answer">
+                    <p>Evaluamos cada eventualidad de forma directa por WhatsApp. Si el tejido aún no ha comenzado o surge algún inconveniente de nuestra parte, coordinamos la devolución correspondiente; si la pieza ya está en elaboración o con materiales apartados, buscamos la mejor alternativa como ajuste o reprogramación.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- PIE DE PÁGINA INSTITUCIONAL -->
+    <footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-col">
+            <div class="footer-brand">
+                <span class="footer-logo-icon">🧶</span>
+                <h3>Miko Stitches</h3>
+            </div>
+            <p>Amigurumis y tejidos artesanales hechos a mano con hilos de algodón. Estamos ubicados en Cumaná, Edo sucre-Venezuela. ¡Hacemos realidad tu personaje favorito!</p>
+            <div class="footer-socials">
+                <a href="https://wa.me/584248360059" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+                </svg></a>
+                <a href="https://www.instagram.com/mikostitches?exln=czhreGFzaXA1N2Zs" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                </svg></a>
+                <!--<a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16"><path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/></svg></a>-->
+            </div>
+        </div>
+        <div class="footer-col">
+            <h4>Navegación</h4>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#catalogo">Catálogo</a></li>
+                <li><a href="#proceso">Proceso de Creación</a></li>
+                <li><a href="#opiniones">Opiniones</a></li>
+                <li><a href="#faq">Preguntas Frecuentes</a></li>
+            </ul>
+        </div>
+        <div class="footer-col" id="contacto">
+    <h3>Atención al Cliente</h3>
+    <ul class="footer-contacto">
+        <li>
+            <!-- Icono de Correo (SVG) -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
+            </svg>
+            <span>emiliocrm96@gmail.com</span>
+        </li>
+        <li>
+            <!-- Icono de Teléfono / WhatsApp (SVG) -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+            </svg>
+            <span>+58 424 8360059</span>
+        </li>
+        <li>
+            <!-- Icono de Ubicación (SVG) -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+            </svg>
+            <span>Cumaná, Edo Sucre, Venezuela</span>
+        </li>
+    </ul>
+</div>
+        <div class="footer-col">
+            <h4>Métodos de Pago</h4>
+            <p>Aceptamos pagos seguros y rápidos:</p>
+            <ul class="footer-payments">
+                <li>💳 Binance Pay (USDT)</li>
+                <li>📱 Transferencia Bancaria</li>
+                <li>🇻🇪 Pago Móvil</li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 Miko Stitches. Todos los derechos reservados. Hecho con amor artesanal 🧶✨.</p>
+    </div>
+</footer>   
+
+    <!-- ELEMENTO HTML PARA LA NOTIFICACIÓN FLOTANTE (TOAST) -->
+    <div id="toastNotificacion">
+        <div class="toast-icon">✓</div>
+        <span id="toastTexto">¡Producto añadido al carrito!</span>
+    </div>
+
+    <!-- MODAL DE CONFIRMACIÓN PERSONALIZADO PARA VACIAR CARRITO -->
+    <div id="modalConfirmacion" class="confirm-modal-overlay">
+        <div class="confirm-modal-card">
+            <div class="confirm-modal-icon">⚠️</div>
+            <h3>Vaciar Carrito</h3>
+            <p>¿Estás seguro de que deseas vaciar todo el carrito?</p>
+            <div class="confirm-modal-actions">
+                <button class="btn-cancelar-confirm" onclick="cerrarModalConfirmacion(false)">Cancelar</button>
+                <button class="btn-aceptar-confirm" onclick="cerrarModalConfirmacion(true)">Vaciar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Detalle de Producto -->
+<div id="modalProducto" class="modal-overlay" onclick="cerrarModalProducto(event)">
+    <div class="modal-card">
+        
+        <!-- Botón de cierre independiente en la esquina superior absoluta -->
+        <button class="modal-close" type="button" onclick="cerrarModalProductoDirecto()">✕</button>
+        
+        <div class="modal-left">
+            <!-- NUEVO: mini carrusel (los botones y puntos solo aparecen si el producto tiene más de una foto) -->
+            <div class="modal-galeria" id="modalGaleria">
+                <img id="modalImagen" src="" alt="Producto">
+                <button type="button" class="galeria-btn galeria-prev" id="galeriaPrev" aria-label="Foto anterior" hidden>&#8249;</button>
+                <button type="button" class="galeria-btn galeria-next" id="galeriaNext" aria-label="Foto siguiente" hidden>&#8250;</button>
+                <div class="galeria-puntos" id="galeriaPuntos" hidden></div>
+            </div>
+        </div>
+
+        <div class="modal-right">
+            <span id="modalCategoria" class="modal-tag">Categoría</span>
+            <h2 id="modalTitulo" class="modal-title">Nombre del Producto</h2>
+            
+            <div class="modal-rating">
+                ★ <span id="modalStars">5</span> <span class="reviews-count">(20 opiniones)</span>
+            </div>
+
+            <p id="modalDescripcion" class="modal-description">
+                Descripción detallada del amigurumi tejidito a mano.
+            </p>
+
+            <!-- <div class="modal-details-box">
+                <p><strong>Materiales:</strong> <span id="modalMateriales">Hilo de algodón suave</span></p>
+                <p><strong>Lavado:</strong> <span id="modalLavado">Lavar a mano con agua fría y jabón suave.</span></p>
+            </div> -->
+
+            <div class="modal-footer">
+                <div class="price-container">
+                    <span class="price-label">Precio Total</span>
+                    <span id="modalPrecio" class="price-amount">$0.00</span>
+                </div>
+                <button id="modalBtnAgregar" class="btn-add-cart">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
+                      <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l.5 2H5V5zM6 5v2h2V5zm3 0v2h2V5zm3 0v2h1.36l.5-2zm1.11 3H12v2h.61zM11 8H9v2h2zM8 8H6v2h2zM5 8H3.89l.5 2H5zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"/>
+                    </svg> Añadir al Carrito
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- BOTÓN FLOTANTE DE WHATSAPP -->
+<a href="https://wa.me/584248360059?text=%C2%A1Hola%21%20Tengo%20una%20consulta%20sobre%20sus%20amigurumis%20%F0%9F%A7%B6%E2%9C%A8" 
+   class="whatsapp-btn-flotante" 
+   target="_blank" 
+   rel="noopener noreferrer" 
+   title="¿Tienes dudas? ¡Escríbenos por WhatsApp!">
+    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+        <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+    </svg>
+</a>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>

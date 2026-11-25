@@ -1,0 +1,17 @@
+[
+  { "nombre": "María G.", 
+  "pedido": "Cumaná • Pedido Personalizado", 
+  "rating": 5, 
+  "texto": "¡El amigurumi de Luffy quedó idéntico! Quedé enamorada de cada detalle. La atención excelente." 
+  },
+  { "nombre": "Carlos R.", 
+  "pedido": "Cumaná • Llavero", 
+  "rating": 5, 
+  "texto": "Le regalé un llaverito de Groot a mi pareja y le encantó. El acabado del tejido es súper firme." 
+  },
+  { "nombre": "Jose A.", 
+  "pedido": "Cumaná • Llavero", 
+  "rating": 5, 
+  "texto": "Excelente pedido. me gusto mucho. muchas gracias." 
+  }
+]
