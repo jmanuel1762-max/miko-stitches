@@ -37,8 +37,8 @@
         "nombre": "Hollow Knight",
         "precio": "15.00",
         "categoria": "Personajes",
-        "imagen": "imagen/hollow knight.png",
-        "imagenes": ["imagen/hollow Knight-2.jpg"],
+        "imagen": "imagen/hollow-knight.png",
+        "imagenes": ["imagen/hollow-knight-2.jpg"],
         "descripcion": "¡El pequeño vasito sin voz ha llegado desde Hallownest! ⚔️🖤 Les presento a este increíble amigurumi de Hollow Knight tejido 100% a mano con una textura impecable."
     },
     {
@@ -46,7 +46,7 @@
         "nombre": "Groot",
         "precio": "10.00",
         "categoria": "Personajes",
-        "imagen": "imagen/groot.png",
+        "imagen": "imagen/groot-1.png",
         "descripcion": "¡Yo Soy Groot! 🌱🌹 Les presento a este adorable Groot amigurumi tejido 100% a mano con muchísima dedicación y cariño."
     },
     {
