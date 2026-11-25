@@ -63,7 +63,7 @@
         "nombre": "Peluche de dragon",
         "precio": "25.00",
         "categoria": "Peluches",
-        "imagen": "imagen/dragon.png",
+        "imagen": "imagen/dragon-2.png",
         "imagenes": ["imagen/dragon-1.jpg"],
         "descripcion": "¡Un pequeñito lleno de magia y suavidad! 🦕💙 Les presento a este tierno peluche de dragón tejido 100% a mano con hilo afelpado tipo chenille"
     },
@@ -205,7 +205,7 @@
         "nombre": "Llavero Estrella a Crochet ✨🌟",
         "precio": "6.00",
         "categoria": "Llaveros",
-        "imagen": "imagen/Star.png",
+        "imagen": "imagen/star.png",
         "descripcion": "Un adorable Snoopy hecho a mano con hilo aterciopelado que da ganas de abrazarlo todo el tiempo. Su diseño compacto y tierno lo convierte en el obsequio ideal.🐾✨"
     },
     {
