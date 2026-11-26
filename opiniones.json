@@ -12,6 +12,11 @@
   { "nombre": "Jose A.", 
   "pedido": "Cumaná • Llavero", 
   "rating": 5, 
-  "texto": "Excelente pedido. me gusto mucho. muchas gracias." 
+  "texto": "Excelente pedido del llavero de Harry Potter. me gusto mucho. muchas gracias." 
+  },
+  { "nombre": "Veruska B.", 
+  "pedido": "Amigurumi Luffy • Pedido Personalizado",
+  "rating": 5, 
+  "texto": "Excelente calidad me encantó 🥰. Gracias!" 
   }
 ]
