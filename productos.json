@@ -300,5 +300,14 @@
         "imagen": "imagen/principito.png",
         "imagenes": ["imagen/principito-1.jpg"],
         "descripcion": "Lleva un pedacito de esta entrañable historia a tus espacios con nuestro Principito tejido 100% a mano. Cada puntada refleja dedicación y ternura para crear una pieza especial y llena de significado. 🌹✨👑"
+    },
+    {
+        "id": 37,
+        "nombre": "One Piece a crochet",
+        "precio": "30.00",
+        "categoria": "Personajes",
+        "imagen": "imagen/one-piece-1.jpg",
+        "imagenes": ["imagen/one-piece-2.jpg","imagen/one-piece-3.jpg"],
+        "descripcion": "¡El capitán del Sombrero de Paja ha llegado a tu colección! Este amigurumi de Luffy está tejido 100% a mano con hilo suave y detalles precisos que capturan su esencia aventurera y carismática. Ideal para fans de One Piece y amantes de los amigurumis únicos. 🏴‍☠️✨"
     }
 ]
