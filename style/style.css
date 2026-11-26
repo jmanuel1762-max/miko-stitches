@@ -2780,3 +2780,43 @@ body { overflow-x: clip; }
     aspect-ratio: 1808 / 592;
     height: auto;
 }
+
+/* =========================================
+   TARJETAS DE POSTS: todas alineadas en la misma cuadrícula
+   ========================================= */
+/* Antes se usaba flex con ancho fijo (340px): en la pantalla cabían 3 tarjetas y la 4.ª quedaba
+   sola y centrada en una segunda fila. Ahora es una cuadrícula con columnas iguales:
+   4 en computador, 2 en tablet y 1 en celular, así ninguna queda suelta. */
+.posts-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+.posts-grid .post-card {
+    width: auto;                 /* anula el ancho fijo de 340px */
+    display: flex;
+    flex-direction: column;      /* todas las tarjetas de una fila tienen la misma altura */
+}
+
+/* La imagen mantiene la proporción de antes (340 x 500) aunque la tarjeta cambie de ancho */
+.posts-grid .post-img-container {
+    height: auto;
+    aspect-ratio: 340 / 500;
+}
+
+@media (max-width: 1199px) {
+    .posts-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        max-width: 720px;
+    }
+}
+
+@media (max-width: 639px) {
+    .posts-grid {
+        grid-template-columns: minmax(0, 380px);
+        justify-content: center;
+    }
+}

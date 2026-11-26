@@ -53,7 +53,7 @@ let todosLosProductos = [];
                     <span class="badge-categoria">${producto.categoria}</span>
                     
                     <!-- Imagen ocupando todo el ancho superior de la tarjeta -->
-                    <img src="${producto.imagen}" alt="${producto.nombre}">
+                    <img src="${producto.imagen}" alt="${producto.nombre}" loading="lazy">
 
                     <!-- Contenedor con margen interno para los textos y precios -->
                     <div class="info-producto">
