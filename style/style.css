@@ -2820,3 +2820,20 @@ body { overflow-x: clip; }
         justify-content: center;
     }
 }
+
+/* =========================================
+   ICONO DEL BOTÓN "AÑADIR AL CARRITO" (ventana del producto)
+   ========================================= */
+.btn-add-cart svg {
+    width: 22px;
+    height: 22px;
+    flex-shrink: 0;        /* evita que el icono se encoja cuando el botón es angosto */
+    vertical-align: -0.3em; /* lo alinea con el texto en pantallas grandes */
+}
+
+@media (max-width: 768px) {
+    .btn-add-cart svg {
+        width: 24px;
+        height: 24px;
+    }
+}
