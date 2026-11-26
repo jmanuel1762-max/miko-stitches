@@ -2770,3 +2770,13 @@ body { overflow-x: clip; }
 .avatar-color-3 { background-color: #d5e8fb; color: #245b91; }
 .avatar-color-4 { background-color: #fbd9e6; color: #a22f5c; }
 .avatar-color-5 { background-color: #fdeec2; color: #8a6a0a; }
+
+/* =========================================
+   BANNERS DEL CARRUSEL: misma proporción en PC y celular
+   ========================================= */
+/* Los 3 banners miden 1808 x 592 px. Con la misma proporción, el carrusel se llena completo
+   (sin franjas grises) y las imágenes se ven enteras, sin recortes, en cualquier pantalla. */
+.carrusel-imagen-flyer {
+    aspect-ratio: 1808 / 592;
+    height: auto;
+}
