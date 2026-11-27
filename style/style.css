@@ -2837,3 +2837,72 @@ body { overflow-x: clip; }
         height: 24px;
     }
 }
+
+/* =========================================
+   ETIQUETA "VISTA RÁPIDA" AL PASAR EL CURSOR SOBRE UN PRODUCTO
+   ========================================= */
+/* Contenedor de la foto: sirve de referencia para centrar la etiqueta sobre la imagen.
+   Conserva el mismo espacio de antes (el margen de 12px pasó de la imagen al contenedor). */
+.producto-img-wrap {
+    position: relative;
+    margin-bottom: 12px;
+}
+
+.producto-img-wrap img {
+    display: block;        /* evita el hueco que deja una imagen "en línea" */
+    margin-bottom: 0;
+}
+
+/* Capa suave que oscurece un poco la foto al pasar el cursor, para que la etiqueta se lea bien */
+.producto-img-wrap::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.18);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;   /* el clic sigue abriendo el producto */
+}
+
+.vista-rapida {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);   /* arranca un poco más abajo y sube al aparecer */
+    z-index: 2;
+    background-color: #ffffff;
+    color: #332e2e;
+    padding: 10px 22px;
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    white-space: nowrap;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+/* Al pasar el cursor sobre la tarjeta: aparece la etiqueta; al quitarlo, desaparece */
+.producto-card:hover .vista-rapida {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+}
+
+.producto-card:hover .producto-img-wrap::after {
+    opacity: 1;
+}
+
+/* La etiqueta de categoría debe seguir viéndose por encima de la foto */
+.producto-card .badge-categoria {
+    z-index: 3;
+}
+
+/* En pantallas táctiles no existe "pasar el cursor": allí no se muestra la etiqueta */
+@media (hover: none) {
+    .vista-rapida,
+    .producto-img-wrap::after {
+        display: none;
+    }
+}
